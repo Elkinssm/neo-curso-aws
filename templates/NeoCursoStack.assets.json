@@ -1,0 +1,32 @@
+{
+  "version": "29.0.0",
+  "files": {
+    "fb396148a92bb9bef758cbfc2660899737dc04a78d85db9ff1e924a04427251c": {
+      "source": {
+        "path": "asset.fb396148a92bb9bef758cbfc2660899737dc04a78d85db9ff1e924a04427251c",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "fb396148a92bb9bef758cbfc2660899737dc04a78d85db9ff1e924a04427251c.zip",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    },
+    "0e2edcfe3bce3b3d8d570fb81d9e6e82a8a336904ccc0e495c425b4719fca7cb": {
+      "source": {
+        "path": "NeoCursoStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "0e2edcfe3bce3b3d8d570fb81d9e6e82a8a336904ccc0e495c425b4719fca7cb.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
